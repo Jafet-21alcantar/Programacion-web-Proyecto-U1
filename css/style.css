@@ -3,7 +3,7 @@
     --oscuro: #212121;
     --verde-olivo: #1E2B1E;
     --gris-carbon: #2B2B2B;
-    --beige: #ffffff;
+    --beige: #FFFAF0;
     --verde-letras: #194b19;
 }
 
@@ -27,7 +27,7 @@ html, body {
 
 
 html {
-    background-color: var(--beige);
+    background-color: var(--blanco);
     font-size: 62.5%;
     box-sizing: border-box;
 }
@@ -128,12 +128,19 @@ html {
     object-fit: cover;
     border-radius: 1.5rem;     
     display: block;
+    transition: transform 1s cubic-bezier(0.2, 0.6, 0.3, 1);
+}
+
+.centro-division:hover img{
+    transform: scale(1.07);
+
 }
 
 .centro-division p{
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 1.5rem;
     color: var(--beige);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     max-width: 25rem;
 }
@@ -156,6 +163,8 @@ html {
     background-color: var(--blanco);
     padding: 2rem;
 }
+
+
 
 @media(min-width:768px){
     .bodas-seccion {
@@ -197,6 +206,28 @@ html {
     height: auto;
     object-fit: cover;
 }
+
+.ver-mas-boda{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.ver-mas-boda-boton{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.7rem 2.6rem;
+    color: var(--gris-carbon);
+    text-decoration: none;
+    text-align: center;
+    border-radius:2.5rem;
+    border: 0.2rem solid var(--gris-carbon);
+}
+
 
 .footer-index{
   background-color: var(--oscuro);
